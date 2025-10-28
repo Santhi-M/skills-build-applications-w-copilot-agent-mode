@@ -1,16 +1,46 @@
-# Build Applications with GitHub Copilot Agent Mode
+````markdown
+# OctoFit Tracker App (skeleton)
 
-<img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
+This branch contains a minimal OctoFit Tracker application skeleton and helper scripts to create a Python virtual environment and install dependencies.
 
-Hey Santhi-M!
+Quick start (UNIX / macOS):
 
-Mona here. I'm done preparing your exercise. Hope you enjoy! 💚
+1. Ensure you have Python 3.8+ installed.
+2. Run the setup script to create a virtual environment and install requirements:
 
-Remember, it's self-paced so feel free to take a break! ☕️
+```bash
+chmod +x scripts/setup_venv.sh
+./scripts/setup_venv.sh
+```
 
-[![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/Santhi-M/skills-build-applications-w-copilot-agent-mode/issues/1)
+3. Activate the virtual environment:
 
----
+```bash
+source .venv/bin/activate
+```
 
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+4. Run the app:
 
+```bash
+python -m octofit
+```
+
+Quick start (Windows PowerShell):
+
+```powershell
+.\scripts\setup_venv.ps1
+.\.venv\Scripts\Activate.ps1
+python -m octofit
+```
+
+Files added:
+- octofit/ (package)
+  - __init__.py
+  - app.py
+  - __main__.py
+- requirements.txt
+- scripts/setup_venv.sh
+- scripts/setup_venv.ps1
+- .gitignore
+
+````
